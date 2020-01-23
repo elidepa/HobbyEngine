@@ -1,0 +1,39 @@
+<Scene>
+  <Camera>
+    <Position x="0" y="1.7" z="3" />
+    <Rotation yaw="-90.0" pitch="0.0" />
+  </Camera>
+  <GameObjects>
+    <GameObject file="Scenes/scene_1/container.xml" />
+    <GameObject file="Scenes/scene_1/brickwall_cube.xml" />
+    <GameObject file="Scenes/scene_1/sphere.xml" />
+    <GameObject file="Scenes/scene_1/ground.xml" />
+    <GameObject file="Scenes/scene_1/particle_game_object.xml" />
+    <GameObject file="Scenes/scene_1/cone.xml" />
+  </GameObjects>
+  <UIElements>
+    <TextElement font="Fonts/OpenSans-Regular.ttf" x="25" y="25" scale="1.0">
+      <Text text="Press ESC to quit." />
+      <Color r="1" g="0.6" b="0.1" a="1" />
+    </TextElement>
+    <TextElement font="Fonts/OpenSans-Regular.ttf" x="25" y="75" scale="0.7">
+      <Script file="Scripts/fps.lua" />
+      <Color r="1" g="0.6" b="0.1" a="1" />
+      <Text text="FPS: " />
+    </TextElement>
+  </UIElements>
+  <Lighting>
+    <Direction x="-0.4" y="-1.0" z="0.3" />
+    <Ambient x="0.3" y="0.3" z="0.3" />
+    <Diffuse x="0.7" y="0.7" z="0.7" />
+    <Specular x="0.5" y="0.5" z="0.5" />
+  </Lighting>
+  <Skybox>
+    <Right file="Textures/Skybox/miramar_right.jpg" />
+    <Left file="Textures/Skybox/miramar_left.jpg" />
+    <Top file="Textures/Skybox/miramar_top.jpg" />
+    <Bottom file="Textures/Skybox/miramar_bottom.jpg" />
+    <Back file="Textures/Skybox/miramar_back.jpg" />
+    <Front file="Textures/Skybox/miramar_front.jpg" />
+  </Skybox>
+</Scene>

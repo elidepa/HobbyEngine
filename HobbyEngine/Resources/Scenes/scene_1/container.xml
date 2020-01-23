@@ -1,0 +1,18 @@
+<GameObject>
+	<Components>
+		<TransformComponent>
+			<Position x="0.0" y="0.0" z="0.0"></Position>
+			<Rotation x="0.0" y="0.0" z="0.0"></Rotation>
+		</TransformComponent>
+    <RenderComponent>
+      <Model file="Models/Cube.obj" />
+      <NormalMap file="Textures/container2_norm_inv.jpg" />
+      <Material>
+        <DiffuseMap file="Textures/container2.jpg" />
+        <SpecularMap file="Textures/container2_specular.jpg" />
+        <ReflectionMap file="Textures/container2_reflection.jpg" />
+        <Shininess value="32" />
+      </Material>
+    </RenderComponent>
+	</Components>
+</GameObject>

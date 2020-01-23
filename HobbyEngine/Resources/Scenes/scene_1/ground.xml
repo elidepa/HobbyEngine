@@ -1,0 +1,18 @@
+<GameObject>
+  <Components>
+    <TransformComponent>
+      <Position x="0.0" y="-0.5" z="0.0"></Position>
+      <Rotation x="0.0" y="0.0" z="0.0"></Rotation>
+    </TransformComponent>
+    <RenderComponent>
+      <Model file="Models/groundplane.obj" />
+      <NormalMap file="Textures/flat_normal.jpg" />
+      <Material>
+        <DiffuseMap file="Textures/groundplane.jpg" />
+        <SpecularMap file="Textures/groundplane_specular.jpg" />
+        <ReflectionMap file="Textures/groundplane_reflection.jpg" />
+        <Shininess value="4" />
+      </Material>
+    </RenderComponent>
+  </Components>
+</GameObject>

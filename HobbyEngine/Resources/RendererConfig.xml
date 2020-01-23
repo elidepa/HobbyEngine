@@ -1,0 +1,14 @@
+<Renderer>
+  <VertexShader file="Shaders/game_object_vs.glsl" />
+  <FragmentShader file="Shaders/game_object_fs.glsl" />
+  <SkyboxVertexShader file="Shaders/skybox_vs.glsl" />
+  <SkyboxFragmentShader file="Shaders/skybox_fs.glsl" />
+  <ShadowMapVertexShader file="Shaders/shadow_map_vs.glsl" />
+  <ShadowMapFragmentShader file="Shaders/shadow_map_fs.glsl" />
+  <ShadowMapDebugVertexShader file="Shaders/shadow_map_debug_vs.glsl" />
+  <ShadowMapDebugFragmentShader file="Shaders/shadow_map_debug_fs.glsl" />
+  <ParticleVertexShader instanced="true" file ="Shaders/particle_instanced_vs.glsl" />
+  <ParticleFragmentShader file ="Shaders/particle_fs.glsl" />
+  <UIVertexShader file ="Shaders/UI_vs.glsl" />
+  <UIFragmentShader file ="Shaders/UI_fs.glsl" />
+</Renderer>

@@ -1,0 +1,22 @@
+<GameObject>
+  <Components>
+    <TransformComponent>
+      <Position x="-2.0" y="1.0" z="-4.0"></Position>
+      <Rotation x="0.0" y="0.0" z="0.0"></Rotation>
+    </TransformComponent>
+    <ParticleSystemComponent>
+      <ParticleSystem activateAfterInit="true" />
+      <Particles maxParticles="200" initialSpawn="20" spawnRate="0.05" life="2000" lifeRandomness="0.0">
+        <OffsetRandomness x="0.15" y="0.15" z="0.15" />
+        <Velocity x="0.0" y="0.25" z="0.0" />
+        <VelocityRandomness x="0.25" y="0.0" z="0.25" />
+        <Size size="0.05" />
+        <SizeRandomness size="0.01" />
+        <Color r="1" g="1" b="1" a="1.0" />
+        <ColorRandomness r="0.0" g="0.0" b="0.0" a="1.0" />
+        <ColorChange r="-0.1" g="-0.7" b="-0.7" a="-0.8" />
+      </Particles>
+      <Texture file="Textures/smoke_particle.png" />
+    </ParticleSystemComponent>
+  </Components>
+</GameObject>

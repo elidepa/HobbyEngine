@@ -1,0 +1,36 @@
+<GameObject>
+  <Components>
+    <TransformComponent>
+      <Position x="-3" y="1.0" z="3"></Position>
+      <Rotation x="0.0" y="0.0" z="0.0"></Rotation>
+    </TransformComponent>
+    <LuaComponent>
+      <Script file="Scripts/cone.lua" />
+    </LuaComponent>
+    <RenderComponent>
+      <Model file="Models/cone.obj" />
+      <NormalMap file="Textures/cone_normal.jpg" />
+      <Material>
+        <DiffuseMap file="Textures/cone.jpg" />
+        <SpecularMap file="Textures/cone_specular.jpg" />
+        <ReflectionMap file="Textures/cone_reflection.jpg" />
+        <Shininess value="16" />
+      </Material>
+    </RenderComponent>
+    <ParticleSystemComponent>
+      <ParticleSystem activateAfterInit="false" lifetime="1000" />
+      <Particles maxParticles="100" initialSpawn="20" spawnRate="0.1" life="1000" lifeRandomness="100">
+        <Offset x="0" y="0.5" z="0" />
+        <OffsetRandomness x="0.05" y="0.2" z="0.05" />
+        <Velocity x="0.0" y="0.25" z="0.0" />
+        <VelocityRandomness x="0.25" y="0.0" z="0.25" />
+        <Size size="0.02" />
+        <SizeRandomness size="0.01" />
+        <Color r="2" g="2" b="2" a="1.0" />
+        <ColorRandomness r="0.0" g="0.0" b="0.0" a="1.0" />
+        <ColorChange r="-0.2" g="-1.4" b="-1.4" a="0" />
+      </Particles>
+      <Texture file="Textures/smoke_particle_2.png" />
+    </ParticleSystemComponent>
+  </Components>
+</GameObject>

@@ -1,0 +1,21 @@
+<GameObject>
+	<Components>
+		<TransformComponent>
+			<Position x="1.0" y="1.0" z="-3.0"></Position>
+			<Rotation x="0.0" y="0.0" z="0.0"></Rotation>
+		</TransformComponent>
+    <RenderComponent>
+      <Model file="Models/big_sphere.obj" />
+      <NormalMap file="Textures/Earth/earth4k_normal_inverted.jpg" />
+      <Material>
+        <DiffuseMap file="Textures/Earth/earth4k.jpg" />
+        <SpecularMap file="Textures/Earth/earth4k_specular.jpg" />
+        <ReflectionMap file="Textures/Earth/earth_reflection.jpg" />
+        <Shininess value="32" />
+      </Material>
+    </RenderComponent>
+    <LuaComponent>
+      <Script file="Scripts/earth.lua" />
+    </LuaComponent>
+	</Components>
+</GameObject>

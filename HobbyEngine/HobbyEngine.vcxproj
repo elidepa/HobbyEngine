@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>16.0</VCProjectVersion>
+    <ProjectGuid>{A6AD80F6-1856-48A6-8159-D8CE8554EE0F}</ProjectGuid>
+    <RootNamespace>HobbyEngine</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <IncludePath>$(SolutionDir)Libraries\include;$(IncludePath)</IncludePath>
+    <LibraryPath>$(SolutionDir)Libraries\lib;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <IncludePath>C:\Users\Samuli\Libraries\include;$(IncludePath)</IncludePath>
+    <LibraryPath>C:\Users\Samuli\Libraries\lib;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <IncludePath>C:\Users\Samuli\Libraries\include;$(IncludePath)</IncludePath>
+    <LibraryPath>C:\Users\Samuli\Libraries\lib;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <IncludePath>$(SolutionDir)Libraries\include;$(IncludePath)</IncludePath>
+    <LibraryPath>$(SolutionDir)Libraries\lib;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <PreprocessorDefinitions>LOG_LEVEL_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <AdditionalDependencies>opengl32.lib;glfw3.lib;tinyxml2-debug.lib;lua53.lib;freetype.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+    <PostBuildEvent>
+      <Command>xcopy "$(ProjectDir)Resources" "$(SolutionDir)Debug\Resources" /e /i /y</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <AdditionalDependencies>opengl32.lib;glfw3.lib;lua53.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalDependencies>opengl32.lib;glfw3.lib;tinyxml2-release.lib;lua53.lib;freetype.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+    <PostBuildEvent>
+      <Command>xcopy "$(ProjectDir)Resources" "$(SolutionDir)Release\Resources" /e /i /y</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalDependencies>opengl32.lib;glfw3.lib;lua53.lib;freetype.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="Source\Engine\InputSystem.cpp" />
+    <ClCompile Include="Source\Engine\Scene.cpp" />
+    <ClCompile Include="Source\GameObjects\LuaComponent.cpp" />
+    <ClCompile Include="Source\GameObjects\ParticleSystemComponent.cpp" />
+    <ClCompile Include="Source\GameObjects\RenderComponent.cpp" />
+    <ClCompile Include="Source\Renderer\Camera.cpp" />
+    <ClCompile Include="Source\Renderer\Renderer.cpp" />
+    <ClCompile Include="Source\Renderer\Skybox.cpp" />
+    <ClCompile Include="Source\ResourceCache\FontLoader.cpp" />
+    <ClCompile Include="Source\ResourceCache\ImageLoader.cpp" />
+    <ClCompile Include="Source\ResourceCache\ModelLoader.cpp" />
+    <ClCompile Include="Source\ResourceCache\ResourceCache.cpp" />
+    <ClCompile Include="Source\GameObjects\GameObject.cpp" />
+    <ClCompile Include="Source\Engine\GLApplication.cpp" />
+    <ClCompile Include="Source\GameObjects\TransformComponent.cpp" />
+    <ClCompile Include="Source\Main.cpp" />
+    <ClCompile Include="Source\UI\Font.cpp" />
+    <ClCompile Include="Source\UI\TextElement.cpp" />
+    <ClCompile Include="Source\UI\UIElement.cpp" />
+    <ClCompile Include="Source\Utils\DebugLogger.cpp" />
+    <ClCompile Include="Source\Utils\FileUtils.cpp" />
+    <ClCompile Include="Source\Utils\XMLUtils.cpp" />
+    <ClCompile Include="Source\Vendor\glad.c" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Source\Engine\InputSystem.h" />
+    <ClInclude Include="Source\Engine\Scene.h" />
+    <ClInclude Include="Source\GameObjects\LuaComponent.h" />
+    <ClInclude Include="Source\GameObjects\ParticleSystemComponent.h" />
+    <ClInclude Include="Source\GameObjects\RenderComponent.h" />
+    <ClInclude Include="Source\Renderer\Camera.h" />
+    <ClInclude Include="Source\Renderer\Renderer.h" />
+    <ClInclude Include="Source\Renderer\Skybox.h" />
+    <ClInclude Include="Source\ResourceCache\FontLoader.h" />
+    <ClInclude Include="Source\ResourceCache\ImageLoader.h" />
+    <ClInclude Include="Source\ResourceCache\LuaLoader.h" />
+    <ClInclude Include="Source\ResourceCache\ModelLoader.h" />
+    <ClInclude Include="Source\ResourceCache\ResourceCache.h" />
+    <ClInclude Include="Source\GameObjects\GameObject.h" />
+    <ClInclude Include="Source\Engine\GLApplication.h" />
+    <ClInclude Include="Source\GameObjects\TransformComponent.h" />
+    <ClInclude Include="Source\ResourceCache\TextLoader.h" />
+    <ClInclude Include="Source\UI\Font.h" />
+    <ClInclude Include="Source\UI\TextElement.h" />
+    <ClInclude Include="Source\UI\UIElement.h" />
+    <ClInclude Include="Source\Utils\DebugLogger.h" />
+    <ClInclude Include="Source\Utils\FileUtils.h" />
+    <ClInclude Include="Source\Utils\XMLUtils.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Xml Include="Resources\GameConfig.xml" />
+    <Xml Include="Resources\RendererConfig.xml" />
+    <Xml Include="Resources\Scenes\Scene1.xml" />
+    <Xml Include="Resources\Scenes\Scene1\Cone.xml" />
+    <Xml Include="Resources\Scenes\Scene1\GO2.xml" />
+    <Xml Include="Resources\Scenes\Scene1\Ground.xml" />
+    <Xml Include="Resources\Scenes\Scene1\ParticleGameObject.xml" />
+    <Xml Include="Resources\Scenes\Scene1\Sphere.xml" />
+    <Xml Include="Resources\Scenes\Scene1\TestGameObject.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\README.md" />
+    <None Include="Resources\Scripts\cone.lua" />
+    <None Include="Resources\Scripts\earth.lua" />
+    <None Include="Resources\Scripts\fps.lua" />
+    <None Include="Resources\Scripts\script.lua" />
+    <None Include="Resources\Shaders\fragment.glsl" />
+    <None Include="Resources\Shaders\ParticleFragment.glsl" />
+    <None Include="Resources\Shaders\ParticleInstancedFragment.glsl" />
+    <None Include="Resources\Shaders\ParticleInstancedVertex.glsl" />
+    <None Include="Resources\Shaders\ParticleVertex.glsl" />
+    <None Include="Resources\Shaders\ShadowMapDebugFragment.glsl" />
+    <None Include="Resources\Shaders\ShadowMapDebugVertex.glsl" />
+    <None Include="Resources\Shaders\shadowMapFragment.glsl" />
+    <None Include="Resources\Shaders\shadowMapVertex.glsl" />
+    <None Include="Resources\Shaders\skyboxFragment.glsl" />
+    <None Include="Resources\Shaders\skyboxVertex.glsl" />
+    <None Include="Resources\Shaders\UIFragment.glsl" />
+    <None Include="Resources\Shaders\UIVertex.glsl" />
+    <None Include="Resources\Shaders\vertex.glsl">
+      <FileType>Text</FileType>
+    </None>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

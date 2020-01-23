@@ -1,0 +1,243 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Source\Main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Vendor\glad.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Engine\GLApplication.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Utils\DebugLogger.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Utils\FileUtils.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\GameObjects\GameObject.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\GameObjects\TransformComponent.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\ResourceCache\ResourceCache.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\ResourceCache\ModelLoader.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\GameObjects\LuaComponent.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\GameObjects\RenderComponent.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Engine\Scene.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Renderer\Camera.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Utils\XMLUtils.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Renderer\Renderer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\ResourceCache\ImageLoader.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Engine\InputSystem.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Renderer\Skybox.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\GameObjects\ParticleSystemComponent.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\UI\UIElement.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\UI\Font.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\ResourceCache\FontLoader.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\UI\TextElement.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Source\Engine\GLApplication.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Utils\DebugLogger.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Utils\FileUtils.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\GameObjects\GameObject.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\GameObjects\TransformComponent.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\ResourceCache\ResourceCache.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\ResourceCache\TextLoader.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\ResourceCache\ModelLoader.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\GameObjects\LuaComponent.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\ResourceCache\LuaLoader.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\GameObjects\RenderComponent.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Renderer\Renderer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Engine\Scene.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Renderer\Camera.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Utils\XMLUtils.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\ResourceCache\ImageLoader.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Engine\InputSystem.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Renderer\Skybox.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\GameObjects\ParticleSystemComponent.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\UI\UIElement.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\UI\Font.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\ResourceCache\FontLoader.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\UI\TextElement.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Xml Include="Resources\Scenes\Scene1\Cone.xml">
+      <Filter>Resource Files</Filter>
+    </Xml>
+    <Xml Include="Resources\GameConfig.xml">
+      <Filter>Resource Files</Filter>
+    </Xml>
+    <Xml Include="Resources\Scenes\Scene1\GO2.xml">
+      <Filter>Resource Files</Filter>
+    </Xml>
+    <Xml Include="Resources\Scenes\Scene1\Ground.xml">
+      <Filter>Resource Files</Filter>
+    </Xml>
+    <Xml Include="Resources\Scenes\Scene1\ParticleGameObject.xml">
+      <Filter>Resource Files</Filter>
+    </Xml>
+    <Xml Include="Resources\RendererConfig.xml">
+      <Filter>Resource Files</Filter>
+    </Xml>
+    <Xml Include="Resources\Scenes\Scene1.xml">
+      <Filter>Resource Files</Filter>
+    </Xml>
+    <Xml Include="Resources\Scenes\Scene1\Sphere.xml">
+      <Filter>Resource Files</Filter>
+    </Xml>
+    <Xml Include="Resources\Scenes\Scene1\TestGameObject.xml">
+      <Filter>Resource Files</Filter>
+    </Xml>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Scripts\cone.lua">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Resources\Scripts\fps.lua">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Resources\Shaders\fragment.glsl">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Resources\Shaders\ParticleFragment.glsl">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Resources\Shaders\ParticleInstancedFragment.glsl">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Resources\Shaders\ParticleInstancedVertex.glsl">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Resources\Shaders\ParticleVertex.glsl">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Resources\Scripts\script.lua">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Resources\Shaders\ShadowMapDebugFragment.glsl">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Resources\Shaders\ShadowMapDebugVertex.glsl">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Resources\Shaders\shadowMapFragment.glsl">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Resources\Shaders\shadowMapVertex.glsl">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Resources\Shaders\skyboxFragment.glsl">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Resources\Shaders\skyboxVertex.glsl">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Resources\Shaders\UIFragment.glsl">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Resources\Shaders\UIVertex.glsl">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Resources\Shaders\vertex.glsl">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\README.md" />
+    <None Include="Resources\Scripts\earth.lua" />
+  </ItemGroup>
+</Project>

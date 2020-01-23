@@ -1,0 +1,18 @@
+<GameObject>
+  <Components>
+    <TransformComponent>
+      <Position x="-2" y="-0.2" z="-1.2"></Position>
+      <Rotation x="0.0" y="0.0" z="0.0"></Rotation>
+    </TransformComponent>
+    <RenderComponent>
+      <Model file="Models/cube.obj" />
+      <NormalMap file="Textures/brickwall_normal.jpg" />
+      <Material>
+        <DiffuseMap file="Textures/brickwall.jpg" />
+        <SpecularMap file="Textures/brickwall.jpg" />
+        <ReflectionMap file="Textures/brickwall_reflection.jpg" />
+        <Shininess value="16" />
+      </Material>
+    </RenderComponent>
+  </Components>
+</GameObject>
