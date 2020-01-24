@@ -6,7 +6,7 @@ The aim of this project is to create a simple educational OpenGL-based game engi
 
 ### Precompiled binary
 
-The precompiled binaries for Windows can be found in this [repository's releases page](https://github.com/elidepa/repo/relelases). The zip-file includes the compiled binary as well as libraries required to run the program.
+The precompiled binaries for Windows can be found in this [repository's releases page](https://github.com/elidepa/HobbyEngine/releases). The zip-file includes the compiled binary as well as libraries required to run the program.
 
 ### Compiling
 

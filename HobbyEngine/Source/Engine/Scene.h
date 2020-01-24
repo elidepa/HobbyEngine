@@ -29,7 +29,7 @@ public:
 
 	bool update(int deltaTime);
 
-	std::vector<SharedGOPtr>& gameObjects() { return m_gameObjects; }
+	std::vector<std::shared_ptr<GameObject>>& gameObjects() { return m_gameObjects; }
 	std::vector<std::shared_ptr<UIElement>>& uiElements() { return m_uiElements; }
 
 	Camera& camera() { return m_camera; }
@@ -39,7 +39,7 @@ public:
 	glm::mat4 lightSpaceMatrix();
 
 private:
-	std::vector<SharedGOPtr> m_gameObjects;
+	std::vector<std::shared_ptr<GameObject>> m_gameObjects;
 	std::vector<std::shared_ptr<UIElement>> m_uiElements;
 
 	Camera m_camera;

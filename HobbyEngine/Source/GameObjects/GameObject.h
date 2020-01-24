@@ -39,7 +39,7 @@ public:
 	{
 		auto componentIt = m_components.find(id);
 		if (componentIt != m_components.end()) {
-			SharedGOComponentPtr found = componentIt->second;
+			std::shared_ptr<IGOComponent> found = componentIt->second;
 			std::weak_ptr<T> component(std::static_pointer_cast<T>(found));
 			return component;
 		} else {

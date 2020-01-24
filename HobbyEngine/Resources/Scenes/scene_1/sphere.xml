@@ -10,7 +10,7 @@
       <Material>
         <DiffuseMap file="Textures/Earth/earth4k.jpg" />
         <SpecularMap file="Textures/Earth/earth4k_specular.jpg" />
-        <ReflectionMap file="Textures/Earth/earth_reflection.jpg" />
+        <ReflectionMap file="Textures/Earth/earth4k_alt_reflection.jpg" />
         <Shininess value="32" />
       </Material>
     </RenderComponent>
